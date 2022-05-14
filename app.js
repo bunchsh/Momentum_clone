@@ -8,11 +8,14 @@ const HIDDEN_CLASSNAME = "hidden";
 
 function onLoginSubmit(event) {
     const username = loginInput.value;
-    event.preventDefault();
-    loginForm.classList.add(HIDDEN_CLASSNAME);
+    event.preventDefault(); // 기본 동작 중단
+    loginForm.classList.add(HIDDEN_CLASSNAME);  // classname 추가
 
-    greeting.innerText = `Hello ${username}`;
-    greeting.classList.remove(HIDDEN_CLASSNAME);
+    /** username 저장 */
+    localStorage.setItem("username", username);
+
+    greeting.innerText = `Hello ${username}`;   // h1에 텍스트 추가
+    greeting.classList.remove(HIDDEN_CLASSNAME);    // classname 삭제
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
