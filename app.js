@@ -11,8 +11,9 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 const link = document.querySelector("a");
 
-function handleLinkClick() {
-    alert("clicked");
+function handleLinkClick(event) {
+    event.preventDefault();
+    console.log(event);
 }
 
 link.addEventListener("click", handleLinkClick);
