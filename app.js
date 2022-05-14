@@ -7,9 +7,10 @@ const greeting = document.querySelector("#greeting");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+
 function paintGreetings() {
-    const username = localStorage.getItem(USERNAME_KEY);
-    greeting.innerText = `Hello ${username}`; // h1에 텍스트 추가
+    greeting.innerText = `Hello ${savedUsername}`; // h1에 텍스트 추가
     greeting.classList.remove(HIDDEN_CLASSNAME); // classname 삭제
 }
 
@@ -26,7 +27,7 @@ function onLoginSubmit(event) {
 loginForm.addEventListener("submit", onLoginSubmit);
 
 
-const savedUsername = localStorage.getItem(USERNAME_KEY);
+
 
 // console.log(savedUsername);
 
