@@ -8,3 +8,11 @@ function onLoginSubmit(event) {
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
+
+const link = document.querySelector("a");
+
+function handleLinkClick() {
+    alert("clicked");
+}
+
+link.addEventListener("click", handleLinkClick);
