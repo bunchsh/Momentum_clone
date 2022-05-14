@@ -3,12 +3,16 @@ const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 
 // string만 포함된 변수는 대문자로 표기하고 string을 저장하고 싶을 때 사용
+// 중요한 정보를 담은 것이 아니므로 대문자로 작성
 const HIDDEN_CLASSNAME = "hidden";
 
 function onLoginSubmit(event) {
     const username = loginInput.value;
     event.preventDefault();
-    loginForm.classList.add("HIDDEN_CLASSNAME");
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+
+    greeting.innerText = "Hello " + username;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
