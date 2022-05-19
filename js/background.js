@@ -4,6 +4,8 @@ const images = [
     "2.jpg",
 ];
 
- const chosenImage = images[Math.floor(Math.random()*images.length)];
+const chosenImage = images[Math.floor(Math.random()*images.length)];
 
- console.log(chosenImage);
+const image = document.createElement("img");
+
+image.src = `img/${chosenImage}`;
