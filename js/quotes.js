@@ -38,12 +38,10 @@ const quotes = [
     {
         quote: "To create more positive results in your life, replace ‘if only’ with ‘next time’.",
         author: "Unknown"
-    },
-    {
-        quote: "When we are no longer able to change a situation, we are challenged to change ourselves.",
-        author: "Viktor Frankl"
     }
 ]
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
+
+console.log(quotes[Math.floor(Math.random()*9)]);
