@@ -3,3 +3,5 @@ const images = [
     "1.jpg",
     "2.jpg",
 ];
+
+ cosnt chosenImage = images[Math.floor(Math.random()*quotes.length)];
