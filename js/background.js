@@ -4,4 +4,6 @@ const images = [
     "2.jpg",
 ];
 
- cosnt chosenImage = images[Math.floor(Math.random()*quotes.length)];
+ const chosenImage = images[Math.floor(Math.random()*images.length)];
+
+ console.log(chosenImage);
