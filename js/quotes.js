@@ -1,4 +1,4 @@
-const quotes = {
+const quotes = [
     {
         quote: "You can't change what you are, only what you do.",
         author: "Philip Pullman"
@@ -43,4 +43,7 @@ const quotes = {
         quote: "When we are no longer able to change a situation, we are challenged to change ourselves.",
         author: "Viktor Frankl"
     }
-}
+]
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
