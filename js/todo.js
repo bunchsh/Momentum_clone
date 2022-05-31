@@ -4,6 +4,10 @@ const toDoList = document.getElementById("todo-list");
 
 const toDos = [];
 
+function saveToDos(){
+    localStorage.setItem("todos", JSON.stringify(toDos));
+};
+
 function deleteTodo(event) {
     const li =  event.target.parentElement;
     li.remove();
@@ -28,6 +32,7 @@ function handleTodoList(event) {
     toDoInput.value = "";
     toDos.push(newTodo);
     paintToDo(newTodo);
+    saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleTodoList);
