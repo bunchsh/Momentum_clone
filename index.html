@@ -15,6 +15,8 @@
 
 <body>
     <div id="container">
+        <h2 id="clock">00:00</h2>   <!--default 값을 00:00-->
+        <h1 id="greeting" class="hidden"></h1>
         <form id="login-form" class="hidden">
             <input required 
             maxlength="15" 
@@ -22,8 +24,6 @@
             placeholder="What is your name?" />
             <input type="submit" value="Log In" />
         </form>
-        <h2 id="clock">00:00</h2>   <!--default 값을 00:00-->
-        <h1 id="greeting" class="hidden"></h1>
         <form id="todo-form">
             <h2 id="todo-notice">What is your main focus for today?</h2>
             <input type="text" required />
