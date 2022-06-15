@@ -10,4 +10,5 @@ const image = document.createElement("img");
 
 image.src = `img/${chosenImage}`;
 
-document.body.appendChild(image);
+document.body.style.backgroundImage = "url(" + image.src + ")";
+// document.body.appendChild(image);

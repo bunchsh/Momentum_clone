@@ -10,7 +10,7 @@ const USERNAME_KEY = "username";
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 function paintGreetings() {
-    greeting.innerText = `Hello ${savedUsername}`; // h1에 텍스트 추가
+    greeting.innerText = `Hello, ${savedUsername}`; // h1에 텍스트 추가
     greeting.classList.remove(HIDDEN_CLASSNAME); // classname 삭제
 }
 

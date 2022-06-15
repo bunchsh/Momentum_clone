@@ -7,22 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <title>Momentum</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <form id="login-form" class="hidden">
-        <input required 
-        maxlength="15" 
-        type="text" 
-        placeholder="What is your name?" />
-        <input type="submit" value="Log In" />
-    </form>
-    <h2 id="clock">00:00:00</h2>   <!--default 값을 00:00-->
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
+    <div id="container">
+        <form id="login-form" class="hidden">
+            <input required 
+            maxlength="15" 
+            type="text" 
+            placeholder="What is your name?" />
+            <input type="submit" value="Log In" />
+        </form>
+        <h2 id="clock">00:00</h2>   <!--default 값을 00:00-->
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form">
+            <h2 id="todo-notice">What is your main focus for today?</h2>
+            <input type="text" required />
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
     <div id="quote">
         <span></span>
         <span></span>

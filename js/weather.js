@@ -12,7 +12,7 @@ function onGeoOk(position) {
         const weather = data.weather[0].main;
         const name = data.name;
 
-        weatherContainer.innerText = weather;
+        weatherContainer.innerText = `${weather} / ${data.main.temp}º`;
         city.innerText = name;
     }));
 };

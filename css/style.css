@@ -1,3 +1,105 @@
+body {
+    margin: 0 auto;
+    background-size: cover;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+    display: table-col;
+}
+
+#container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*----- hidden -----*/
 .hidden {
     display: none;
+}
+
+/*----- Clock -----*/
+#clock {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    margin: -25px;
+}
+
+/*----- greetings -----*/
+#greeting {
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+
+    margin: 0;
+}
+
+/*----- to do list -----*/
+#todo-form #todo-notice {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+
+    margin: 0;
+}
+
+#todo-form input {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+
+    background: none;
+    border: 0;
+    border-bottom: 2px solid white;
+    font-size: 22px;
+    color: white;
+}
+
+#todo-list {
+    list-style: none;
+
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+#todo-list li span:last-child {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/*----- quotes -----*/
+#quote {
+    text-align: center;
+    font-size: 12px;
+    color: #eee;
+    font-style: italic;
+
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#quote span:last-child {
+    display: block;
+    margin: 0 auto;
+}
+
+/*----- weather -----*/
+#weather {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: table-column;
+    color: white;
+}
+
+#weather span:last-child {
+    display: table-cell;
+    font-size: 12px;
 }
