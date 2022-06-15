@@ -37,7 +37,7 @@ body {
 }
 
 /*----- to do list -----*/
-#todo-form #todo-notice {
+#login-form #login-notice, #todo-form #todo-notice {
     text-align: center;
     font-weight: normal;
     font-size: 20px;
@@ -46,7 +46,7 @@ body {
     margin: 0;
 }
 
-#login-form input:first-child, #todo-form input {
+#login-form #input-name, #todo-form input {
     display: block;
     margin: 0 auto;
     width: 320px;

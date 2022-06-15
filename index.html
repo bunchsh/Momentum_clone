@@ -18,13 +18,11 @@
         <h2 id="clock">00:00</h2>   <!--default 값을 00:00-->
         <h1 id="greeting" class="hidden"></h1>
         <form id="login-form" class="hidden">
-            <input required 
-            maxlength="15" 
-            type="text" 
-            placeholder="What is your name?" />
+            <h2 id="login-notice">What is your name?</h2>
+            <input id="input-name" required maxlength="15" type="text" />
             <input type="submit" value="Log In" />
         </form>
-        <form id="todo-form">
+        <form id="todo-form" class="hidden">
             <h2 id="todo-notice">What is your main focus for today?</h2>
             <input type="text" required />
         </form>

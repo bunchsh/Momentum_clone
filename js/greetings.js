@@ -26,11 +26,6 @@ function onLoginSubmit(event) {
 
 loginForm.addEventListener("submit", onLoginSubmit);
 
-
-
-
-// console.log(savedUsername);
-
 if (savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);

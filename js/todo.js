@@ -53,3 +53,10 @@ if(savedToDos !== null) {
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
+
+/** todo hidden control */
+if (savedUsername !== null) {
+    toDoForm.classList.remove(HIDDEN_CLASSNAME);
+} else {
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+}
